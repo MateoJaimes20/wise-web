@@ -20,6 +20,8 @@
 
     --color-icono:rgb(255,255,255);
     --color-fondo-icono:rgb(178,110,255);
+
+    --colo-tema:rgb(94, 94, 94);
 }
 
 .dark-mode{
@@ -56,7 +58,7 @@ body{
     height: 100vh;
     width: 100%;
     background-color: var(--color-barra-lateral);
-    color: var();
+    display: flex;
 }
 
 /* Menu*/
@@ -192,7 +194,7 @@ body{
 /* modo oscuro */
 .barra-lateral .modo-oscuro{
     width: 100%;
-    margin-bottom: 280px;
+    margin-bottom: 220px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -289,19 +291,69 @@ body{
 
 /* Main */
 
-#inicio{
+#sub{
     background-color: var(--color-menu-hover);
     color: var(--color-menu-hover-texto);
 }
 
 main{
+    width: 100%;
     margin-left: 250px;
     padding: 20px;
     transition: margin-left 0.5s ease;
+    color: var(--color-texto);
 }
+
 main.min-main{
     margin-left: 80px;
 }
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.etiquetas {
+    background-color: var(--color-menu-hover);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenido-etiqueta {
+    background-color: var(--color-barra-lateral);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.temas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+/* Barra lateral derecha */
+.barra-lateral-derecha{
+    width: 50%;
+    height: 100%;
+    font-size: 30px;
+    background-color: var(--color-barra-lateral);
+    box-shadow: 5px 5px 5px 10px var(--color-shadow);
+}
+
 
 
 
