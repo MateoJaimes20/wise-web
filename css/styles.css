@@ -57,6 +57,7 @@
 body{
     height: 100vh;
     width: 100%;
+    transition: background-color 0.3s ease;
     background-color: var(--color-barra-lateral);
     display: flex;
 }
@@ -183,7 +184,7 @@ body{
     font-size: 20px;
 }
 
-/* linea */
+/* linea -------------------------------------------------------------------------------------*/
 .barra-lateral .linea{
     width: 100%;
     height: 1px;
@@ -191,7 +192,7 @@ body{
     background-color: var(--color-linea);
 }
 
-/* modo oscuro */
+/* modo oscuro ------------------------------------------------------------------------------*/
 .barra-lateral .modo-oscuro{
     width: 100%;
     margin-bottom: 220px;
@@ -214,7 +215,7 @@ body{
     font-size: 20px;
 }
 
-/* switch */
+/* switch -----------------------------------------------------------------------------------*/
 .barra-lateral .modo-oscuro .switch{
     display: flex;
     align-items: center;
@@ -248,7 +249,7 @@ body{
     left: 15px;
 }
 
-/* usuario */
+/* usuario ----------------------------------------------------------------------------------------*/
 .barra-lateral .usuario{
     width: 100%;
     display: flex;
@@ -289,7 +290,14 @@ body{
     font-size: 20px;
 }
 
-/* Main */
+/* Main --------------------------------------------------------------------------------------------*/
+.contenido .linea{
+    width: 100%;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--color-linea);
+}
 
 #sub{
     background-color: var(--color-menu-hover);
@@ -325,9 +333,14 @@ main.min-main{
 
 .contenido-etiqueta {
     background-color: var(--color-barra-lateral);
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.contenido .etiquetas a{
+    text-decoration: none;
+    color: var(--color-texto);
 }
 
 .temas {
@@ -341,18 +354,72 @@ main.min-main{
     width: 200px;
     height: 80px;
     background-color: red;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
-/* Barra lateral derecha */
+/* Barra lateral derecha --------------------------------------------------------------------------------*/
 .barra-lateral-derecha{
-    width: 50%;
+    width: 30%;
     height: 100%;
     font-size: 30px;
+    color: var(--color-texto);
     background-color: var(--color-barra-lateral);
-    box-shadow: 5px 5px 5px 10px var(--color-shadow);
+    transition: background-color 0.3s ease;
+    box-shadow: 7px 5px 1px 8px var(--color-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.barra-lateral-derecha .noticia{
+    background-color: var(--color-menu-hover);
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.barra-lateral-derecha .noticia img{
+    width: 90%;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.barra-lateral-derecha .noticia h1{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.barra-lateral-derecha .noticia p{
+    font-size: 10px;
+    text-align: justify;
+    margin: 15px;
+}
+
+.barra-lateral-derecha .redes-sociales{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.barra-lateral-derecha .redes-sociales ion-icon{
+    color: var(--color-texto-menu);
+    min-width: 50px;
+    font-size: 20px;
+}
+
+.barra-lateral .redes .info-ad{
+    text-align: center;
+}
+
+.barra-lateral-derecha .redes .info-ad p{
+    color: var(--color-texto-menu);
+    font-size: 14px;
+    text-align: center;
+}
+
 
 
 
@@ -372,6 +439,12 @@ main.min-main{
         position: fixed;
         left: -250px;
         box-shadow: none; 
+    }
+
+    .barra-lateral-derecha{
+        position: fixed;
+        left: -250px;
+        box-shadow: none;
     }
 
     .max-barra-lateral{
