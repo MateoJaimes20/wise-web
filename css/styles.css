@@ -446,6 +446,23 @@ main.min-main{
         box-shadow: none;
     }
 
+    .contenido .etiquetas{
+        justify-content: center;
+    }
+
+    .contenido .etiquetas a{
+        width: 90%;
+    }
+
+    .contenido .etiquetas span{
+        margin-top: 10px;
+    }
+
+    .cuadrado {
+        width: 90%;
+        border-radius: 20px;
+    }
+
     .max-barra-lateral{
         left: 0;
         box-shadow: 5px 0px 10px var(--color-shadow);
