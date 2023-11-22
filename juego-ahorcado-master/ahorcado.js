@@ -22,7 +22,7 @@ var btnInicio = document.getElementById("reset");
 
 // Escoger palabra al azar
 function generaPalabra() {
-  rand = (Math.random() * 6).toFixed(0);
+  rand = (Math.random() * 5).toFixed(0);
   palabra = palabras[rand][0].toUpperCase();
   console.log(palabra);
 }

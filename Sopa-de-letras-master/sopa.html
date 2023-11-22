@@ -3,6 +3,8 @@
 
 <head>
     <title>Wise | Sopa de letras</title>
+    <link rel="stylesheet" href="estilo-ahoracado.css">
+    <link rel="icon" href="../multimedia/img/logo-wise.png" type="icon" />
 
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,6 +23,15 @@
 </head>
 
 <body>
+
+    <img class="mancha-uno" src="../../multimedia/img/mancha-uno.png" alt="">
+    <img class="mancha-dos" src="../../multimedia/img/mancha-dos.png" alt="">
+    <img class="mancha-tres" src="../../multimedia/img/mancha-tres.png" alt="">
+  
+    <a href="../../html/juegos.html">
+      <ion-icon name="caret-back-circle-outline"></ion-icon>
+    </a>
+
     <div class="container">
         <div class="row">
             <script type="text/javascript">
@@ -32,8 +43,8 @@
             </script>
             <div class="row text-center">
                 <br />
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+                <div class="panel panel-default" style="border-radius: 20px;">
+                    <div class="panel-heading" style="background-color: rgb(178,110,255); border-radius: 20px;">
                         <h4>Escriba las palabras, luego presiona el botón <strong>"Crear Juego"</strong></h4>
                     </div>
                     <div class="panel-body">
@@ -56,8 +67,8 @@
             <div class="row text-center">
                 <div>
                     <div class="row">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
+                        <div class="panel panel-default" style="border-radius: 20px;">
+                            <div class="panel-heading" style="background-color: rgb(178,110,255); border-radius: 20px;">
                                 <h4>Sopa de letras</h4>
                             </div>
                             <div class="panel-body row">
@@ -120,6 +131,9 @@
                     wordfindgame.solve(juego, palabras);
                 });
             </script>
+                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                <script src="../js/script.js"></script>
 </body>
 
 </html>

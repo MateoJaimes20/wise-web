@@ -1,10 +1,8 @@
-/**
-* Wordfind.js 0.0.1
-* (c) 2012 Bill, BunKat LLC.
-* Wordfind is freely distributable under the MIT license.
-* For all details and documentation:
-*     http://github.com/bunkat/wordfind
-*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+*{
+    font-family: 'Outfit', sans-serif;
+}
 
 p {
     font: 22pt sans-serif;
@@ -14,10 +12,6 @@ p {
     padding-top: 8%;
 }
 
-
-/**
-* Styles for the puzzle
-*/
 
 #juego {
     border: 1px solid black;
@@ -32,7 +26,6 @@ p {
 }
 
 
-/* style for each square in the puzzle */
 
 #juego .puzzleSquare {
     height: 30px;
@@ -40,7 +33,7 @@ p {
     text-transform: uppercase;
     background-color: white;
     border: 0;
-    font: 1em sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 button::-moz-focus-inner {
@@ -48,14 +41,12 @@ button::-moz-focus-inner {
 }
 
 
-/* indicates when a square has been selected */
 
 #juego .selected {
     background-color: orange;
 }
 
 
-/* indicates that the square is part of a word that has been found */
 
 #juego .found {
     background-color: blue;
@@ -63,7 +54,7 @@ button::-moz-focus-inner {
 }
 
 #juego .solved {
-    background-color: purple;
+    background-color: greenyellow;
     color: white;
 }
 
@@ -76,8 +67,7 @@ button::-moz-focus-inner {
 
 #Palabras {
     padding-top: 21px;
-    text-align: right;
-    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
 }
 
 #Palabras ul {
@@ -86,7 +76,8 @@ button::-moz-focus-inner {
 
 #Palabras li {
     padding: 3px 0;
-    font: 1em sans-serif;
+    font-family: 'Outfit', sans-serif;
+
 }
 
 
@@ -95,4 +86,32 @@ button::-moz-focus-inner {
 #Palabras .wordFound {
     text-decoration: line-through;
     color: gray;
-}
+}  
+  ion-icon{
+    color: rgb(178,110,255);
+    font-size: 70px;
+    margin: 40px;
+    position: fixed;
+  }
+  
+  .mancha-uno{
+    width: 400px;
+    height: 50%;
+    position: fixed;
+  }
+  
+  .mancha-dos {
+    width: 400px;
+    height: 50%;
+    position: fixed;
+    left: 81%;
+    top: 50%;
+  }
+  
+  .mancha-tres {
+    width: 400px;
+    height: 50%;
+    position: fixed;
+    left: 90%;
+    top: 20%;
+  }
