@@ -473,6 +473,63 @@ main.min-main{
 }
 
 
+/* lecciones teoria--------------------------------------- */
+
+main .titulo-leccion p{
+    background-color: var(--color-menu-hover);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.documentacion .significado{
+    border: 2px var(--color-linea) solid;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 0px 10px var(--color-shadow);
+}
+
+.documentacion .significado h1{
+    margin: 10px;
+}
+
+.documentacion .significado .significado-s{
+    background-color: rgb(178,110,255);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.documentacion .significado .significado-s p{
+    font-size: 20px;
+}
+
+.documentacion .significado .significado-s .ejemplo{
+    background-color: rgb(255, 191, 0);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.documentacion .contenido-ad{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.documentacion .contenido-ad .extencion{
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.documentacion .contenido-ad .final-contenido{
+    background-color: rgb(255, 191, 0);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
 
 /* -------MEDIA--------------------------------------------- */
 @media(max-height: 660px){
@@ -503,6 +560,11 @@ main.min-main{
 
     .contenido .etiquetas a{
         width: 90%;
+    }
+
+    .documentacion .contenido-ad{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .contenido .etiquetas span{
