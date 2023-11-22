@@ -20,7 +20,7 @@ menu.addEventListener("click",()=>{
         barraLateral.classList.add("mini-barra-lateral");
         main.classList.add("min-main");
         spans.forEach((span)=>{
-            span.classList.add("oculto")
+            span.classList.add("oculto");
         })
     }
 });
