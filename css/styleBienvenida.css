@@ -63,7 +63,15 @@
 }
 
 /* inicio sesion--------------------------------------------------- */
-
+.logo-wise-inicio{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
     
 
 /* registro-------------------------------------------------------- */
@@ -81,7 +89,7 @@ p{
     margin-top: 10px;
 }
 
-a ion-icon{
+.container a ion-icon{
     color: rgb(101, 101, 101);
     font-size: 50px;
     margin-top: 10px;
