@@ -472,6 +472,96 @@ main.min-main{
     margin-left: 185px;
 }
 
+/* gramatica------------------------------------------------------- */
+
+.titulo .titulo-dos{
+    background-color: var(--color-menu-hover);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.significado{
+    background-color: rgb(178,110,255);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.significado h1{
+    margin-bottom: 10px;
+}
+
+.partes{
+    background-color: var(--color-menu-hover);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.partes h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partes .partes-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.partes .partes-flex .partes-min{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.partes .partes-flex .partes-min h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.adicional{
+    background-color: var(--color-menu-hover);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.adicional h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adicional .adicional-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adicional .adicional-flex .adicional-min{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.adicional .adicional-flex .adicional-min h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.adicional .adicional-flex .adicional-min p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.adicional .adicional-flex .adicional-min .span-ejemplo{
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
 
 /* lecciones teoria--------------------------------------- */
 
@@ -595,5 +685,13 @@ main .titulo-leccion p{
 
     main.min-main{
         margin-left: 0;
+    }
+
+    .partes .partes-flex{
+        display: grid;
+    }
+
+    .adicional .adicional-flex{
+        display: grid;
     }
 }
