@@ -144,13 +144,13 @@ main{
     display: none;
 }
 
-
+/* fondo-------------------- */
 
 ion-icon{
     color: rgb(178,110,255);
     font-size: 70px;
-    margin: 10px;
     position: fixed;
+    margin-left: 40px;
     z-index: 99;
 }
   
